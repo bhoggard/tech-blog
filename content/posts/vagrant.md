@@ -4,12 +4,13 @@ draft = false
 title = 'Setting up Vagrant and VirtualBox on Pop!_OS or Ubuntu 22'
 +++
 
-When I started to set up Vagrant and VirtualBox on my Pop OS Linux machine, I had trouble with conflicting version of Vagrant and VirtualBox. The version of Vagrant available via `apt install` wasn't compatible with the version of Virtualbox installed with apt.
+When I started to set up Vagrant and VirtualBox on my Pop OS Linux machine, I had trouble with conflicting versions of Vagrant and VirtualBox. The version of Vagrant available via `apt install` wasn't compatible with the version of Virtualbox installed with apt.
 
-I solved it by installing VirtualBox normally using apt.
+I solved it by removing vagrant, then installing VirtualBox normally using apt.
 
 ```bash
 sudo apt update
+sudo apt remove vagrant
 sudo apt install virtualbox
 ```
 
