@@ -1,6 +1,6 @@
 +++
 date = '2025-10-02T23:22:56-04:00'
-draft = true
+draft = false
 title = 'Setting up Vagrant and VirtualBox on Pop!_OS or Ubuntu 22'
 +++
 
